@@ -1,0 +1,6 @@
+
+
+A project to build some react-dnd pocs.
+
+From simple ones to complex ones (reorganizing, placing inside droppable vs
+next to droppable, etc).
