@@ -8,4 +8,34 @@ html {
   background-color: #272727;
   color: #dddddd;
   font-family: sans-serif;
+}
+
+.app-heading {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.simple-ancestor {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+.simple-droppable-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  width: 40%;
+  height: 100%;
+  background-color: #dddddd;
+}
+
+.draggable-block {
+  height: 25%;
+  width: 100%;
+  background-color: orange;
 }/*# sourceMappingURL=main.css.map */

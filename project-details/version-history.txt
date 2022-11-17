@@ -1,5 +1,9 @@
 
 
+0.1.3:
+    - basic skeleton set-up (state based tree not configured)
+
+
 0.1.2:
     - pre-skeleton set up (trimmed dirs, added extentions, set up sass sheets,
       etc)
