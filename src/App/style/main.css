@@ -46,12 +46,19 @@ html {
 .draggable-block--dragging {
   height: 25%;
   width: 100%;
-}
-
-.draggable-block {
   background-color: orange;
+}
+.draggable-block:hover,
+.draggable-block--dragging:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.draggable-block:active,
+.draggable-block--dragging:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .draggable-block--dragging {
-  background-color: #272727;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

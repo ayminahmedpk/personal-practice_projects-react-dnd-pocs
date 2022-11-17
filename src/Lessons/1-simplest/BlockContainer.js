@@ -6,23 +6,24 @@ const BlockContainer = (props) => {
 
   const [{isOver}, drop] = useDrop(() => ({
     accept: "block",
-    drop: (item) => {logDrop(item)},
+    // drop: (item) => {logDrop(item)},
+    drop: () => {implementDrop()},
     collect: (monitor) => ({
-      isOver: !!monitor.isOver(),
-      // isOver: monitor.isOver(),
+      isOver: monitor.isOver(),
     })
   }))
 
-  const logDrop = (item) => {console.log(item, 'was dropped on', this, ' !');}
+  const implementDrop = () => {props.onDrop(props.id)}
 
   const containerClassName = 'simple-droppable-container';
-  const overClassName = '--can-accept';
-  const exportClassName = containerClassName + (isOver? overClassName : '')
+  const overClassName      = '--can-accept';
+  const exportClassName    = containerClassName + (isOver? overClassName : '')
 
   return (
     <div
-      className={exportClassName}
-      ref={drop}
+      ref       = {drop}
+      className = {exportClassName}
+      // className = {containerClassName}
     >
       {props.children}
     </div>

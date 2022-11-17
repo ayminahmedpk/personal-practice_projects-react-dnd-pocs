@@ -9,7 +9,7 @@
 .simple-ancestor {
     display         : flex;
     justify-content : space-between;
-
+    
     width  : 80%;
     height : 400px;
     margin : auto;
@@ -34,9 +34,12 @@
 
 .draggable-block,
 .draggable-block--dragging {
-    height : 25%;
-    width  : 100%;
+    height           : 25%      ;
+    width            : 100%     ;
+    background-color : orange ;
+
+    &:hover  { cursor : grab     ; }
+    &:active { cursor : grabbing ; }
 }
 
-.draggable-block { background-color: orange; }
-.draggable-block--dragging { background-color: #272727; }
+.draggable-block--dragging { opacity: 0.5; }
