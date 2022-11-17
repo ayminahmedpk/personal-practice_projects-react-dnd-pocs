@@ -1,5 +1,9 @@
 
 
+0.1.5:
+    - dragging and dropping works (state needs implementation)
+
+
 0.1.4:
     - stateful skeleton set-up (changing state changes position)
 
@@ -12,8 +16,10 @@
     - pre-skeleton set up (trimmed dirs, added extentions, set up sass sheets,
       etc)
 
+
 0.1.1:
     - added react-dnd, react-dnd-html5-backend
+
 
 0.1.0:
     - init

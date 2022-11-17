@@ -16,23 +16,27 @@
 }
 
 
-.simple-droppable-container {
+.simple-droppable-container,
+.simple-droppable-container--can-accept {
     display         : flex;
     flex-direction  : column;
     justify-content : flex-start;
     align-items     : center;
-
+    
     padding : 1rem;
     width   : 40%;
     height  : 100%;
     
-    background-color : #dddddd;
 }
 
+.simple-droppable-container { background-color : #dddddd; }
+.simple-droppable-container--can-accept { background-color : #aaaaaa; }
 
-.draggable-block {
+.draggable-block,
+.draggable-block--dragging {
     height : 25%;
     width  : 100%;
-
-    background-color: orange;
 }
+
+.draggable-block { background-color: orange; }
+.draggable-block--dragging { background-color: #272727; }
