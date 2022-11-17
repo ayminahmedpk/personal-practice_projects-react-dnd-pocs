@@ -1,5 +1,9 @@
 
 
+0.1.2:
+    - pre-skeleton set up (trimmed dirs, added extentions, set up sass sheets,
+      etc)
+
 0.1.1:
     - added react-dnd, react-dnd-html5-backend
 
