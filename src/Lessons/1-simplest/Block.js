@@ -19,7 +19,6 @@ const Block = () => {
     <div
       ref       = {drag} // Similar to callback refs!
       className = {exportClassName}
-      // className = {blockClassName}
     >
     </div>
   )

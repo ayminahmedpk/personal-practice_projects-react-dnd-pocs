@@ -2,7 +2,9 @@ import React from 'react'
 
 import { useDrop } from 'react-dnd'
 
-const BlockContainer = (props) => {
+import Block from './Block'
+
+const BlockContainer = ({id, blockPosition, onDrop}) => {
 
   const [{isOver}, drop] = useDrop(() => ({
     accept: "block",
@@ -13,7 +15,7 @@ const BlockContainer = (props) => {
     })
   }))
 
-  const implementDrop = () => {props.onDrop(props.id)}
+  const implementDrop = () => {onDrop(id)}
 
   const containerClassName = 'simple-droppable-container';
   const overClassName      = '--can-accept';
@@ -23,9 +25,8 @@ const BlockContainer = (props) => {
     <div
       ref       = {drop}
       className = {exportClassName}
-      // className = {containerClassName}
     >
-      {props.children}
+      {blockPosition == id ? <Block/> : ''}
     </div>
   )
 }
