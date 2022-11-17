@@ -1,5 +1,9 @@
 
 
+0.1.4:
+    - stateful skeleton set-up (changing state changes position)
+
+
 0.1.3:
     - basic skeleton set-up (state based tree not configured)
 
