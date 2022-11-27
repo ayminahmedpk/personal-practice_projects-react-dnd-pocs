@@ -5,10 +5,13 @@ import {useDrag} from 'react-dnd';
 const Block = () => {
 
   const[{isDragging}, drag] = useDrag(() => ({
+    
     type: "block",
-    collect: (monitor) => ({
+    
+    collect: (monitor)  => ({
       isDragging: monitor.isDragging()
     }),
+      
   }))
 
   const blockClassName    = 'draggable-block';
@@ -17,7 +20,7 @@ const Block = () => {
 
   return (
     <div
-      ref       = {drag} // Similar to callback refs!
+      ref       = {drag}
       className = {exportClassName}
     >
     </div>

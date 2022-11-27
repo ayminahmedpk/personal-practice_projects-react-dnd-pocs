@@ -1,4 +1,9 @@
 
+0.1.8:
+    - monitoring and hover status
+    - hooks and triggering functions
+    - communication between components
+
 
 0.1.7:
     - improved stateful drag and drop (much better logic, much cleaner)

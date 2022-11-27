@@ -8,10 +8,15 @@ const BlockContainer = ({id, blockPosition, onDrop}) => {
 
   const [{isOver}, drop] = useDrop(() => ({
     accept: "block",
-    // drop: (item) => {logDrop(item)},
+    
+    // drop implicitly gets drop(item, monitor)
     drop: () => {implementDrop()},
+    
     collect: (monitor) => ({
       isOver: monitor.isOver(),
+      // You can distinguish whether it is hovered at container or a nested
+      // droppable, using:
+      // isOver: monitor.isOver(shallow: isTrue),
     })
   }))
 
@@ -26,7 +31,7 @@ const BlockContainer = ({id, blockPosition, onDrop}) => {
       ref       = {drop}
       className = {exportClassName}
     >
-      {blockPosition == id ? <Block/> : ''}
+      {blockPosition == id ? <Block color="blue"/> : ''}
     </div>
   )
 }
