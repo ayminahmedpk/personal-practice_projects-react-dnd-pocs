@@ -1,4 +1,9 @@
 
+0.1.9:
+    - drops on nested containers
+    - modified styling
+
+
 0.1.8:
     - monitoring and hover status
     - hooks and triggering functions
