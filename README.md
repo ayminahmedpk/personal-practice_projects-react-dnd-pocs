@@ -51,20 +51,20 @@ render):
 
 Collect function - Monitoring actions / establishing communication:
   useDrag:
-    - canDrag
-    - isDragging
-    - getItem / getItemType
-    - getDropResult
-    - didDrop
-    - functions to get coordinates
+    * canDrag
+    * isDragging
+    * getItem / getItemType
+    * getDropResult
+    * didDrop
+    * functions to get coordinates
   useDrop:
-    - canDrop
-    - isOver
-    - getItem / getItemType
-    - getDropResult
-    - didDrop
-    - functions to get coordinates
+    * canDrop
+    * isOver
+    * getItem / getItemType
+    * getDropResult
+    * didDrop
+    * functions to get coordinates
   dragLayer:
-    - idDragging
-    - getItem / getItemType
-    - functions to get coordinates
+    * idDragging
+    * getItem / getItemType
+    * functions to get coordinates
