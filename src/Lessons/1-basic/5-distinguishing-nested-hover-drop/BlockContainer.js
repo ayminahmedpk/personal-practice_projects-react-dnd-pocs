@@ -4,21 +4,24 @@ import { useDrop } from 'react-dnd'
 
 import Block from './Block'
 
-const BlockContainer = ({id, blockPosition, onDrop}) => {
+const BlockContainer = ({id, blockPosition, onDrop, children}) => {
 
   const [{isOver}, drop] = useDrop(() => ({
     accept: "block",
     
-    // drop implicitly gets drop(item, monitor)
-    drop: () => {onDrop(id)},
+    drop: (item, monitor) => {
+      if (monitor.isOver({shallow:true})) {
+        onDrop(id)
+      }
+    },
     
     collect: (monitor) => ({
-      isOver: monitor.isOver(),
-      // You can distinguish whether it is hovered at container or a nested
-      // droppable, using:
-      // isOver: monitor.isOver(shallow: isTrue),
-    })
+      isOver: monitor.isOver({shallow:true}),
+    }),
+
   }))
+
+  // const implementDrop = () => {onDrop(id)}
 
   const containerClassName = 'simple-droppable-container';
   const overClassName      = ' can-accept';
@@ -29,6 +32,7 @@ const BlockContainer = ({id, blockPosition, onDrop}) => {
       ref       = {drop}
       className = {exportClassName}
     >
+      {children ? children : ''}
       {blockPosition == id ? <Block color="blue"/> : ''}
     </div>
   )
