@@ -42,29 +42,29 @@ Library at a glance:
 Function triggering points / hooks (not props to monitor and conditionally
 render):
   useDrag:
-  	* item in useDrag as a function
-  	* end in useDrag
+  	- item in useDrag as a function
+  	- end in useDrag
   useDrop:
-  	* hover (function) - called when an item is hoved (shallowable)
-  	* drop (function) - called when an item is dropped
+  	- hover (function) - called when an item is hoved (shallowable)
+  	- drop (function) - called when an item is dropped
 
 
 Collect function - Monitoring actions / establishing communication:
   useDrag:
-    * canDrag
-    * isDragging
-    * getItem / getItemType
-    * getDropResult
-    * didDrop
-    * functions to get coordinates
+    - canDrag
+    - isDragging
+    - getItem / getItemType
+    - getDropResult
+    - didDrop
+    - functions to get coordinates
   useDrop:
-    * canDrop
-    * isOver
-    * getItem / getItemType
-    * getDropResult
-    * didDrop
-    * functions to get coordinates
+    - canDrop
+    - isOver
+    - getItem / getItemType
+    - getDropResult
+    - didDrop
+    - functions to get coordinates
   dragLayer:
-    * idDragging
-    * getItem / getItemType
-    * functions to get coordinates
+    - idDragging
+    - getItem / getItemType
+    - functions to get coordinates
