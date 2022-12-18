@@ -1,4 +1,9 @@
 
+
+0.1.10:
+    - conditional dragging and dropping
+
+
 0.1.9:
     - drops on nested containers
     - modified styling

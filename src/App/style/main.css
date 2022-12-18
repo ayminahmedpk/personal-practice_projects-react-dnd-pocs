@@ -64,6 +64,15 @@ html {
 
 .draggable-block,
 .draggable-block--dragging {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 25%;
   width: 100%;
   background-color: orange;
@@ -81,7 +90,35 @@ html {
   cursor: grabbing;
 }
 
+.draggable-block__button {
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
 .draggable-block--dragging {
   opacity: 0.5;
+}
+
+.control-bar {
+  width: 80%;
+  margin: 2rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.control-bar__button {
+  height: 2rem;
+  width: 40%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.control-bar__button + .control-bar__button {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
