@@ -37,6 +37,12 @@ Library at a glance:
 
   - You can track the coordinates of the items being dragged.
 
+  - You can display a custom component for when the item is being dragged to
+    represent it
+
+  - You can monitor the overal state of the drag/drop library (as any item
+    being dragged, its coordinates, etc).
+
 
   
 Function triggering points / hooks (not props to monitor and conditionally

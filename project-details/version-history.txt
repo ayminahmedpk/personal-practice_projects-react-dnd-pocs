@@ -1,5 +1,9 @@
 
 
+0.1.11:
+    - drag and drop manager
+
+
 0.1.10:
     - conditional dragging and dropping
 
