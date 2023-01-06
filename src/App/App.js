@@ -11,7 +11,8 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 // import Lesson from '../Lessons/1-basic/4-communication/Lesson4';
 // import Lesson from '../Lessons/1-basic/5-distinguishing-nested-hover-drop/Lesson5';
 // import Lesson from '../Lessons/1-basic/6-conditional-drag-drop/Lesson6';
-import Lesson from '../Lessons/1-basic/7-drag-drop-manager/Lesson7';
+// import Lesson from '../Lessons/1-basic/7-drag-drop-manager/Lesson7';
+import Lesson from '../Lessons/2-advanced/1-drag-drop-same-element/Lesson2_1';
 
 import './style/main.css';
 

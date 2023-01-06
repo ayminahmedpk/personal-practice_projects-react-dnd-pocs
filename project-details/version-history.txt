@@ -1,4 +1,7 @@
 
+0.1.12:
+    - drag and drop implemented on same element (preliminary poc)
+
 
 0.1.11:
     - drag and drop manager

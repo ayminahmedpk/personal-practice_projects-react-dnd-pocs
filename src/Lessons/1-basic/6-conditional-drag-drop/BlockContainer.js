@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { useDrop } from 'react-dnd'
 
-import Block from './Block'
+import Block from './Block.js'
 
 const BlockContainer = ({id, blockPosition, onDrop, children, canAccept=true}) => {
 
