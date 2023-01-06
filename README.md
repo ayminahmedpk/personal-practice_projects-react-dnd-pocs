@@ -11,6 +11,8 @@ Library at a glance:
 
   - Can make react components droppable into (useDrop hook)
 
+  - Can make same component both draggable and droppable (both hooks)
+
   - The component is not being dragged and passed to droppable component, even
     though it visually seems so. The only data that is being passed to the
     droppable component is what is provided to the useDrag hook when setting
